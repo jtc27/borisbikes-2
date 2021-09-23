@@ -1,22 +1,24 @@
 class DockingStation
   
-  # def initialize(bike)
-  #   @bike = bike
-  #   @stored_bike = []
-  # end
+  attr_reader :dock
 
-  def dock(bike)
-    
+  def initialize 
+    @dock = []
+  end
+
+  def dock_a_bike(bike)
+    @dock << bike
+  end
+
+  def bike
   end
 
   def release_bike
-    Bike.new 
   end
 
 
 end
 
-class Bike
-  def working?
-  end
-end
+# dockingstation1 = DockingStation.new()
+
+# dockingstation1.dock
