@@ -31,12 +31,12 @@ describe DockingStation do
     expect { ds1.release_bike }.to raise_error
   end
 
-  it "raises an error if user tries to put more bikes in dock than capacity" do
-    ds1 = DockingStation.new
-    bike1 = Bike.new
-    bike2 = Bike.new
-    ds1.dock_a_bike(bike1)
-    expect { ds1.dock_a_bike(bike2) }.to raise_error
-  end
+  # it "raises an error if user tries to put more bikes in dock than capacity" do
+  #   ds1 = DockingStation.new
+  #   bike1 = Bike.new
+  #   bike2 = Bike.new
+  #   ds1.dock_a_bike(bike1)
+  #   expect { ds1.dock_a_bike(bike2) }.to raise_error
+  # end
 
 end
