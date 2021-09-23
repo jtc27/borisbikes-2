@@ -7,7 +7,7 @@ class DockingStation
   end
 
   def dock_a_bike(bike)
-    raise "Dock is at capacity" unless @dock.length == 0
+    raise "Dock is at capacity" unless @dock.length < 20
     @dock << bike 
   end
 
